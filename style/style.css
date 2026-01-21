@@ -85,6 +85,16 @@ header>section,
   box-shadow: 1px 4px 5px 12px rgba(128, 128, 128, 0.276);
 }
 
+/* statistics section style start from here  */
+.statistics-container{
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px;
+  box-shadow: 1px 4px 12px 5px rgba(128, 128, 128, 0.124);
+  border-radius: 15px;
+}
+
 
 /* Responsive Design for Hero Section  */
 
@@ -113,6 +123,9 @@ header>section,
     gap: 50px;
     padding-left: 12px;
   }
+  .statistics-container{
+    margin-left: 10px;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -137,5 +150,8 @@ header>section,
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
     padding-left: 12px;
+  }
+   .statistics-container{
+    margin-left: 10px;
   }
 }
