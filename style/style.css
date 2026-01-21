@@ -10,33 +10,38 @@
   font-style: normal;
 }
 
+
 /* hero section style start from here   */
 
-header>section{
+header>section, .about-me {
   margin-bottom: 90px;
 }
 
-.hero-image{
+.hero-image {
   position: relative;
 }
-.first{
+
+.first {
   position: relative;
   top: 110px;
   left: 30px;
   z-index: 7;
-  
+
 }
-.second{
+
+.second {
   position: absolute;
   top: 150px;
   z-index: 10;
 }
-.third{
+
+.third {
   position: relative;
   left: 60%;
   top: -130px;
   z-index: 5;
 }
+
 .gradient-text {
   background: linear-gradient(#FBA24F, #FF1E1E);
   -webkit-background-clip: text;
@@ -46,7 +51,7 @@ header>section{
 
 }
 
-.order-food-btn{
+.order-food-btn {
   background: linear-gradient(#FBA24F, #FF1E1E);
   padding: 8px 16px;
   border-radius: 25px;
@@ -54,26 +59,53 @@ header>section{
   border: none;
 }
 
+
+/* ABout Me section style start from here  */
+.about-me {
+  background-image: url(../images/shapes/7.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-me-content {
+  max-width: 540px;
+}
+
+
 /* Responsive Design for Hero Section  */
 
 @media screen and (max-width: 576px) {
-  .hero-section{
-    flex-direction: column;
-  }  
+  .hero-section {
+    flex-direction: column
+  }
 
-  .hero-content{
+  .hero-content {
     text-align: center;
     padding: 50px 30px;
+  }
+
+  .about-me-container{
+    flex-direction: column;
+    
+  }
+  .about-me-content{
+    padding: 15px;
   }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
-  .hero-section{
+  .hero-section {
     flex-direction: column;
-  }  
+  }
 
-  .hero-content{
+  .hero-content {
     text-align: center;
     padding: 50px 30px;
+  }
+  .about-me-container{
+    gap: 50px;
+  }
+  .about-me-figure img{
+    padding: 15px;
   }
 }
