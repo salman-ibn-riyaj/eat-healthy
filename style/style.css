@@ -13,7 +13,8 @@
 
 /* hero section style start from here   */
 
-header>section, .about-me {
+header>section,
+.about-me {
   margin-bottom: 90px;
 }
 
@@ -71,6 +72,19 @@ header>section, .about-me {
   max-width: 540px;
 }
 
+/* Recipe sectin style start from here  */
+.recipe-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+
+}
+
+.recipe-card {
+  border-radius: 15px;
+  box-shadow: 1px 4px 5px 12px rgba(128, 128, 128, 0.276);
+}
+
 
 /* Responsive Design for Hero Section  */
 
@@ -84,12 +98,20 @@ header>section, .about-me {
     padding: 50px 30px;
   }
 
-  .about-me-container{
+  .about-me-container {
     flex-direction: column;
-    
+
   }
-  .about-me-content{
+
+  .about-me-content {
     padding: 15px;
+  }
+
+  .recipe-container {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    gap: 50px;
+    padding-left: 12px;
   }
 }
 
@@ -102,10 +124,18 @@ header>section, .about-me {
     text-align: center;
     padding: 50px 30px;
   }
-  .about-me-container{
+
+  .about-me-container {
     gap: 50px;
   }
-  .about-me-figure img{
+
+  .about-me-figure img {
     padding: 15px;
+  }
+
+  .recipe-container {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    padding-left: 12px;
   }
 }
